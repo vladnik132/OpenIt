@@ -1,0 +1,212 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Background */
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: top center;
+}
+
+/* Name */
+.w3-container {
+	margin: 0px;
+	font-weight: bold;
+	font-size: 10px;
+	text-shadow: 1px 1px #000;
+	text-align: center;
+	color: white;
+}
+
+/* Slideshow */
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: 0px auto;
+}
+
+/* Arrow buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  top: -3%;
+}
+
+/* Right button */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  text-align: center;
+  width:  50%
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 3px 3px 3px 3px;
+}
+
+/* Toggle-Switch */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.toggle-switch-container {
+  align-content: center;
+  position: relative;
+  margin-top: -10px;
+  margin: 0px;
+  left: 52%;
+}
+
+.toggle-switch {
+  margin: 0;
+}
+
+.toggle-switch {
+  width: 10px;
+  position: relative;
+}
+
+.toggle-switch input {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.toggle-switch input:checked {
+  z-index: 1;
+}
+
+.toggle-switch input:checked + label {
+  opacity: 1;
+  cursor: default;
+}
+
+.toggle-switch input:not(:checked) + label:hover {
+  opacity: 0.5;
+}
+
+.toggle-switch label {
+  color: #fff;
+  opacity: 0.33;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.toggle-switch .toggle-outside {
+  height: 100%;
+  border-radius: 57px;
+  padding: 11px;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+  margin-top: -10px;
+}
+
+.toggle-switch .toggle-inside {
+  border-radius: 50%;
+  background: #424242;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.switch-vertical {
+  background-color: #00F;
+  width: 0px;
+  height: 60px;
+  margin-left: 27px;
+}
+
+.switch-vertical input {
+  height: 100%;
+  width: 60px;
+  right: 0;
+  margin: 0;
+}
+
+.switch-vertical label {
+  font-size: 15px;
+  line-height: 65px;
+  display: block;
+  width: 80px;
+  height: 50%;
+  margin: 0;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.switch-vertical .toggle-outside {
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 70px;
+  height: 100%;
+  height: 110px;
+  right: 0;
+  top: 0;
+}
+
+.switch-vertical .toggle-inside {
+  height: 64px;
+  left: 3px;
+  top: 3px;
+  width: 64px;
+}
+
+.switch-vertical input:checked ~ .toggle-outside .toggle-inside {
+  top: 3px;
+}
+
+.switch-vertical input ~ input:checked ~ .toggle-outside .toggle-inside {
+  top: 40px;
+}
+
+/* Main Menu */
+input[type=button] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mainmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: -9px;
+}
+
+input[type=button]:hover {
+  background-color: #45a049;
+}
+
+.newContentPageRow{
+  width:100%;
+  display:table;
+  margin-bottom:15px;
+  text-align: center;
+}
+
+/* Help */
+.help {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 10px;
+}
